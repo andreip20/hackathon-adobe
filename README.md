@@ -1,3 +1,18 @@
+
+## INFO
+
+This is my project-solution for the hackathon theme that was given by Adobe in October 2023. I have done the project by myself, using Nextjs for the fullstack implementation of the web app and MySQL for my database. The backend-frontend connection is still in work, the relationship being done with react-axios (coming soon).
+
+The frontend uses Reactjs and TailwindCSS, in addition I have MaterialUI for basic components styling.
+
+The backend is using NextApi library from Nextjs for requests and responses.
+
+The authorization system was fully configured using Next-Auth library, working with OAuth. The provider was Google, and the login managing aspect is done through the usage of sessions.
+
+The app routing is done directly by the framework Nextjs; both on the frontend, and on the backend, for more information see below.
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
