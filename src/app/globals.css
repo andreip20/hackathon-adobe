@@ -2,26 +2,214 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  .navbar {
+    margin-bottom: -50px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid #7986cb;
+    border-radius: 3px;
+    padding: 20px;
+    color: #3f51b5;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .main-text {
+    color: #3f51b5;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .our-initiative {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    width: 100%;
+    margin-top: 100px;
+    color: #3f51b5;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+  }
+
+  .card-initiative {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+
+    gap: 20px;
+    border: 2px solid #3f51b5;
+    border-radius: 5px;
+    height: 200px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: 0.15s ease-in;
+  }
+
+  .card-initiative:hover {
+    border-radius: 25px;
+  }
+
+  .token-container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    padding: 50px;
+    color: #3f51b5;
+  }
+
+  .token-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    border: 2px solid #7986cb;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .acces-denied {
+    margin-top: 300px;
+    margin-left: 600px;
+    color: #3f51b5;
+    font-size: 60px;
+  }
+
+  .donations-container {
+    width: 100%;
+    height: 90%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: #7986cb;
+  }
+
+  .cards-container {
+    border: 1px solid #7986cb;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    width: 50%;
+    align-items: center;
+  }
+
+  .cards-container:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .makedonation-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    color: #7986cb;
+    margin-top: 150px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    color: #3f51b5;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .input-container input {
+    border: 1px solid #3f51b5;
+    border-radius: 10px;
+  }
+
+  .label-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .p-for-makedonation {
+    font-size: 20px;
+  }
+
+  .info-container {
+    border: 2px solid #7986cb;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .our-centers-containers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+  }
+
+  .our-centers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    color: #3f51b5;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #7986cb;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+  }
 }
